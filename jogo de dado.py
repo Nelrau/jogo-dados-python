@@ -7,7 +7,7 @@ class Dado: #cria o objeto
     self.mensagem ='Quer jogar?'
 
   def iniciar(self): # inicia o evento jogar o dado
-    resposta = input(self.mensagem)
+    resposta = input(self.mensagem).upper()
     if resposta == 'sim'or resposta == 's':
       print(random.randint(self.inicio,self.fim))
       dado.iniciar()
